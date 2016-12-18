@@ -10,7 +10,8 @@
   "author": "WangKaibin",
   "license": "ISC",
   "dependencies": {
-
+    "angular": "^1.6.0",
+    "angular-route": "^1.6.0"
   },
   "devDependencies": {
     "css-loader": "^0.26.1",

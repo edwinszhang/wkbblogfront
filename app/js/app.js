@@ -12,14 +12,7 @@ blog
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
         $httpProvider.defaults.transformRequest = [ function(data) {
-            /**
-             * The workhorse; converts an object to x-www-form-urlencoded
-             * serialization.
-             *
-             * @param {Object}
-             *            obj
-             * @return {String}
-             */
+
             var param = function(obj) {
                 var query = '';
                 var name, value, fullSubName, subName, subValue, innerObj, i;
