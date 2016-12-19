@@ -11,6 +11,7 @@
 html{
     color:#000;
     background:#FFF;
+    -ms-touch-action: none;/* 阻止windows Phone 的默认触摸事件 */
 }
 /*
 	TODO remove settings on BODY since we can't namespace it.
@@ -46,6 +47,12 @@ th,
 td {
     margin:0;
     padding:0;
+}
+body {
+    width: 100%;
+    *cursor: default;
+    overflow: hidden;
+    font: 16px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
 }
 table {
     border-collapse:collapse;

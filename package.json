@@ -5,7 +5,7 @@
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --inline"
+    "start": "webpack-dev-server"
   },
   "author": "WangKaibin",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
     "style-loader": "^0.13.1",
+    "uglify-js": "^2.7.5",
     "url-loader": "^0.5.7",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
