@@ -20,7 +20,6 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-
     module: {
         loaders: [
             {
@@ -43,25 +42,12 @@ module.exports = {
 
     //添加我们的插件 会自动生成一个html文件
     plugins: [
-
+        new webpack.optimize.UglifyJsPlugin({minimize: true}),
         new HtmlwebpackPlugin({
             template: path.resolve(APP_PATH, 'index.html'),
             filename: 'index.html',
             inject: 'body'
         }),
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
-    ],
-
-    devServer: {
-        historyApiFallback: true,
-        hot: false,
-        inline: false,
-        progress: true,
-        // proxy: {
-        //     '*': {
-        //         target: 'http://localhost',
-        //         secure: false
-        //     }
-        // }
-    }
+    ]
 };

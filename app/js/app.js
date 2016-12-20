@@ -6,7 +6,7 @@ var blog = angular.module('blog',
 
 
 blog
-    .config(function($routeProvider, $locationProvider, $httpProvider) {
+    .config(["$routeProvider","$locationProvider","$httpProvider",function($routeProvider, $locationProvider, $httpProvider) {
 
         $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded';
         $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -50,6 +50,6 @@ blog
             && String(data) !== '[object File]' ? param(data)
                 : data;
         } ];
-    });
+    }]);
 
 module.exports = blog;

@@ -3,7 +3,7 @@
  */
 var blog = require('../app');
 blog
-    .config(function($routeProvider) {
+    .config(["$routeProvider",function($routeProvider) {
 
         $routeProvider.when('/', {
             template : require('../../templates/index.html'),
@@ -13,12 +13,12 @@ blog
             controller : 'indexController'
         });
 
-    });
+    }]);
 
 
 
 angular.module('blog.indexControllers', []).controller('indexController',
-    function($scope) {
+    ['$scope',function($scope) {
         var FullPage = require('../lib/fullPage');
         $scope.$on('$viewContentLoaded', function() {
             var runPage;
@@ -38,22 +38,24 @@ angular.module('blog.indexControllers', []).controller('indexController',
                 },
                 mode : 'wheel,touch,nav:navBar',               // mode of fullpage
                 start : 0,                                     // which page will display when install
-                easing : 'ease'                                // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1];
-                //  ,onSwipeStart : function(index, thisPage) {   // callback before pageChange
-                //    return 'stop';
-                //  }
-                //  ,beforeChange : function(index, thisPage) {   // callback before pageChange
-                //    return 'stop';
-                //  }
-                //  ,callback : function(index, thisPage) {       // callback when pageChange
-                //    alert(index);
-                //  };
+                easing : 'ease'                            // easing('ease','ease-in','ease-in-out' or use cubic-bezier like [.33, 1.81, 1, 1];
+
             });
+
+
+
 
         });
 
+        //TODO
+        //try to make imgs lazyload,but failed
+        $scope.page2="page2";
+        $scope.page3="page3";
+        $scope.page4="page4";
+        $scope.page5="page5";
+        $scope.page6="page6";
 
-    });
+    }]);
 
 
 
