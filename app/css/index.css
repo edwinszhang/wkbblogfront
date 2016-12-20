@@ -90,3 +90,25 @@
     font-size: 1em;
     font-weight: bold;
 }
+
+.centerPage{
+    width: 80%;
+    margin: 10% auto;
+    height: 75%;
+    background-color: #ededed;
+}
+
+.centerPage .wrap{
+    width: 100%;
+    height: 4em;
+    background-color:white;
+    display: table;
+}
+
+.centerPage .wrap .pageTitle{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 1.5em;
+    padding-left: 1em;
+}

@@ -11,3 +11,4 @@ require('./js/controllers/indexControllers');
 
 require('./css/reset.css');
 require('./css/index.css');
+require('./assets/font-awesome/css/font-awesome.min.css');
