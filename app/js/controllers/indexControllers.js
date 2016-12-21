@@ -55,6 +55,8 @@ angular.module('blog.indexControllers', []).controller('indexController',
         $scope.page5="page5";
         $scope.page6="page6";
 
+        $scope.test=require("../../assets/img/backgroud/town.jpg")
+
     }]);
 
 

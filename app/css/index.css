@@ -68,7 +68,7 @@
     padding: 0;
     margin: 0;
     display: table;
-    height: 10%;
+    height: 4em;
 }
 #navBar .active,#navBar li:hover {
     font-size: 2em;
@@ -92,23 +92,61 @@
 }
 
 .centerPage{
-    width: 80%;
-    margin: 10% auto;
-    height: 75%;
+    width: 70%;
+    margin: 6em auto;
+    height: 80%;
     background-color: #ededed;
+    overflow: hidden;
 }
 
-.centerPage .wrap{
+.centerPage .wraptop{
     width: 100%;
-    height: 4em;
+    height: 10%;
+    min-height: 3em;
     background-color:white;
     display: table;
 }
 
-.centerPage .wrap .pageTitle{
+.centerPage .wraptop .pageTitle{
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     font-size: 1.5em;
-    padding-left: 1em;
+    padding-left: .5em;
+}
+
+.centerPage .wrapbuttom{
+    width: 100%;
+    height: 90%;
+    display: table;
+    border-spacing: 1em;
+}
+
+.centerPage .wrapbuttom .contents{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.centerPage .wrapbuttom .contents .short,.centerPage .wrapbuttom .contents .long{
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 1px #888888;
+    overflow:hidden;
+    position: relative;
+}
+
+.centerPage .wrapbuttom .contents .short{
+    height: 40%;
+}
+
+.centerPage .wrapbuttom .contents .long{
+    height: 54%;
+}
+
+.centerPage .wrapbuttom .contents .down{
+    margin-top: 10%;
+}
+img{
+   position: absolute;
 }
