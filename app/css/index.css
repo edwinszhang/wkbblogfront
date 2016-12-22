@@ -178,6 +178,7 @@
     line-height: 1.5em;
     max-height: 50%;
     overflow: hidden;
+    color: #888888;
 }
 .centerPage .wrapbuttom .contents .long .action{
     font-size: .8em;
