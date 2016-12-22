@@ -113,6 +113,7 @@
     height: 100%;
     font-size: 1.5em;
     padding-left: .5em;
+
 }
 
 .centerPage .wrapbuttom{
@@ -126,14 +127,17 @@
     display: table-cell;
     vertical-align: middle;
     height: 100%;
+    /*When I use max-width,table-cell element's width will be fixed,it's strange but it worked,ok except ie*/
+    max-width:1px;
 }
 
 .centerPage .wrapbuttom .contents .short,.centerPage .wrapbuttom .contents .long{
     width: 100%;
     background-color: white;
-    box-shadow: 1px 1px 1px #888888;
+    box-shadow: 2px 2px 2px #888888;
     overflow:hidden;
     position: relative;
+    background-size:100% 100%;
 }
 
 .centerPage .wrapbuttom .contents .short{
@@ -142,11 +146,43 @@
 
 .centerPage .wrapbuttom .contents .long{
     height: 54%;
+    padding: .5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.centerPage .wrapbuttom .contents .long .info{
+    font-size: .8em;
+    color: #888888;
+    height: 2em;
+    overflow: hidden;
+}
+
+.centerPage .wrapbuttom .contents .long .title{
+    font-weight: bold;
+    line-height: 1.5em;
+    max-height: 3em;
+    overflow: hidden;
+}
+.centerPage .wrapbuttom .contents .long .content{
+    margin-top: 1em;
+    text-indent:2em;
+    font-size: .9em;
+    line-height: 1.5em;
+    max-height: 9em;
+    overflow: hidden;
+}
+.centerPage .wrapbuttom .contents .long .action{
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    font-size: .8em;
+    color: #888888;
+    height: 2em;
+    overflow: hidden;
 }
 
 .centerPage .wrapbuttom .contents .down{
     margin-top: 10%;
-}
-img{
-   position: absolute;
 }

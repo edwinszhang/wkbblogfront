@@ -55,7 +55,25 @@ angular.module('blog.indexControllers', []).controller('indexController',
         $scope.page5="page5";
         $scope.page6="page6";
 
-        $scope.test=require("../../assets/img/backgroud/town.jpg")
+        $scope.img1={
+            "background":"url("+require("../../assets/img/thumbnail/mountain.png")+") no-repeat",
+            "background-size":"100% 100%"
+        }
+
+        $scope.img2={
+            "background":"url("+require("../../assets/img/thumbnail/bye.png")+") no-repeat",
+            "background-size":"100% 100%"
+        }
+
+        $scope.img3={
+            "background":"url("+require("../../assets/img/thumbnail/cloud.png")+") no-repeat",
+            "background-size":"100% 100%"
+        }
+
+        $scope.img4={
+            "background":"url("+require("../../assets/img/thumbnail/lu.png")+") no-repeat",
+            "background-size":"100% 100%"
+        }
 
     }]);
 
