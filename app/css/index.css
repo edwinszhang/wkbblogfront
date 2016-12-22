@@ -135,13 +135,13 @@
     width: 100%;
     background-color: white;
     box-shadow: 2px 2px 2px #888888;
-    overflow:hidden;
     position: relative;
     background-size:100% 100%;
 }
 
 .centerPage .wrapbuttom .contents .short{
     height: 40%;
+    overflow:hidden;
 }
 
 .centerPage .wrapbuttom .contents .long{
@@ -158,29 +158,35 @@
     height: 2em;
     overflow: hidden;
 }
+.centerPage .wrapbuttom .contents .long .info .time{
+    float:right;
+}
 
 .centerPage .wrapbuttom .contents .long .title{
+    height: 3em;
+    font-size: .9em;
     font-weight: bold;
     line-height: 1.5em;
-    max-height: 3em;
     overflow: hidden;
+    /*border-bottom: 1px dashed #888888;*/
 }
 .centerPage .wrapbuttom .contents .long .content{
-    margin-top: 1em;
+    height: 9em;
+    margin-top: .5em;
     text-indent:2em;
     font-size: .9em;
     line-height: 1.5em;
-    max-height: 9em;
+    max-height: 50%;
     overflow: hidden;
 }
 .centerPage .wrapbuttom .contents .long .action{
-    position: absolute;
-    bottom: .5em;
-    left: .5em;
     font-size: .8em;
-    color: #888888;
-    height: 2em;
-    overflow: hidden;
+    color: black;
+    height: 4em;
+    line-height: 4em;
+}
+.centerPage .wrapbuttom .contents .long .action .read{
+    float:right;
 }
 
 .centerPage .wrapbuttom .contents .down{
