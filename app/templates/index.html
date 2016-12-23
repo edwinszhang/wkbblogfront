@@ -6,133 +6,100 @@
     <li>转载</li>
     <li>其他</li>
 </ul>
-<div id="pageContain">
 
-    <div class="page page1 current">
-        <div class="contain">
-            <div class="centerPage">
-                <div class="wraptop">
-                    <p class="pageTitle">
-                        <i class="fa fa-home"></i>&nbsp;首页
+<div class="page">
+    <div class="centerPage">
+        <div class="wraptop">
+            <p class="pageTitle">
+                <i class="fa fa-home" ng-click="go('/article')"></i>&nbsp;首页
+            </p>
+        </div>
+        <div class="wrapbuttom">
+            <div class="contents">
+                <div class="short" ng-style="img1">
+                </div>
+                <div class="long down">
+                    <p class="info">
+                        2016-12-22
+                        <span class="time">22:20</span>
+                    </p>
+                    <div class="title">
+                        这段代码解决蒲丰投针实验的原理是什么？
+                    </div>
+                    <div class="content">
+                        这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
+                    </div>
+                    <p class="action">
+                        <i class="fa fa-tags"></i>&nbsp;转载
+                        <span class="read">阅读全文</span>
                     </p>
                 </div>
-                <div class="wrapbuttom">
-                    <div class="contents">
-                        <div class="short" ng-style="img1">
-                        </div>
-                        <div class="long down">
-                            <p class="info">
-                                2016-12-22
-                                <span class="time">22:20</span>
-                            </p>
-                            <div class="title">
-                                这段代码解决蒲丰投针实验的原理是什么？
-                            </div>
-                            <div class="content">
-                                这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
-                            </div>
-                            <p class="action">
-                                <i class="fa fa-tags"></i>&nbsp;转载
-                                <span class="read">阅读全文</span>
-                            </p>
-                        </div>
+            </div>
+            <div class="contents">
+                <div class="long">
+                    <p class="info">
+                        2016-12-22
+                        <span class="time">22:20</span>
+                    </p>
+                    <div class="title">
+                        这段代码解决蒲丰投针实验的原理是什么？
                     </div>
-                    <div class="contents">
-                        <div class="long">
-                            <p class="info">
-                                2016-12-22
-                                <span class="time">22:20</span>
-                            </p>
-                            <div class="title">
-                                这段代码解决蒲丰投针实验的原理是什么？
-                            </div>
-                            <div class="content">
-                                这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
-                                current->sigaction[signum-1] = tmp;会把tmp的内容拷贝到左手
-                                边所指的位置。完成拷贝后，tmp爱怎样就怎样，
-                            </div>
-                            <p class="action">
-                                <i class="fa fa-tags"></i>&nbsp;转载
-                                <span class="read">阅读全文</span>
-                            </p>
-                        </div>
-                        <div class="short down" ng-style="img2"></div>
+                    <div class="content">
+                        这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
+                        current->sigaction[signum-1] = tmp;会把tmp的内容拷贝到左手
+                        边所指的位置。完成拷贝后，tmp爱怎样就怎样，
                     </div>
-                    <div class="contents">
-                        <div class="short" ng-style="img3">
-                        </div>
-                        <div class="long down">
-                            <p class="info">
-                                2016-12-22
-                                <span class="time">22:20</span>
-                            </p>
-                            <div class="title">
-                                这段代码解决蒲丰投针实验的原理是什么？
-                            </div>
-                            <div class="content">
-                                这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
-                                current->sigaction[signum-1] = tmp;会把tmp的内容拷贝到左手
-                                边所指的位置。完成拷贝后，tmp爱怎样就怎样，
-                            </div>
-                            <p class="action">
-                                <i class="fa fa-tags"></i>&nbsp;转载
-                                <span class="read">阅读全文</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contents">
-                        <div class="long">
-                            <p class="info">
-                                2016-12-22
-                                <span class="time">22:20</span>
-                            </p>
-                            <div class="title">
-                                这段代
-                            </div>
-                            <div class="content">
-                                这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
-                                current->sigaction[signum-1] = tmp;会把tmp的内容拷贝到左手
-                                边所指的位置。完成拷贝后，tmp爱怎样就怎样，
-                            </div>
-                            <p class="action">
-                                <i class="fa fa-tags"></i>&nbsp;转载
-                                <span class="read">阅读全文</span>
-                            </p>
-                        </div>
-                        <div class="short down" ng-style="img4"></div>
-                    </div>
+                    <p class="action">
+                        <i class="fa fa-tags"></i>&nbsp;文章
+                        <span class="read">阅读全文</span>
+                    </p>
                 </div>
+                <div class="short down" ng-style="img2"></div>
+            </div>
+            <div class="contents">
+                <div class="short" ng-style="img3">
+                </div>
+                <div class="long down">
+                    <p class="info">
+                        2016-12-22
+                        <span class="time">22:20</span>
+                    </p>
+                    <div class="title">
+                        这段代码解决蒲丰投针实验的原理是什么？
+                    </div>
+                    <div class="content">
+                        这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
+                        current->sigaction[signum-1] = tmp;会把tmp的内容拷贝到左手
+                        边所指的位置。完成拷贝后，tmp爱怎样就怎样，
+                    </div>
+                    <p class="action">
+                        <i class="fa fa-tags"></i>&nbsp;问题
+                        <span class="read">阅读全文</span>
+                    </p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="long">
+                    <p class="info">
+                        2016-12-22
+                        <span class="time">22:20</span>
+                    </p>
+                    <div class="title">
+                        这段代
+                    </div>
+                    <div class="content">
+                        这里的tmp是个普通值，不是指针。struct sigaction tmp;后面的
+                        current->sigaction[signum-1] = tmp;会把tmp的内容拷贝到左手
+                        边所指的位置。完成拷贝后，tmp爱怎样就怎样，
+                    </div>
+                    <p class="action">
+                        <i class="fa fa-tags"></i>&nbsp;转载
+                        <span class="read">阅读全文</span>
+                    </p>
+                </div>
+                <div class="short down" ng-style="img4"></div>
             </div>
         </div>
     </div>
-
-    <div class="page" ng-class="page2">
-        <div class="contain">
-
-        </div>
-    </div>
-
-    <div class="page" ng-class="page3">
-        <div class="contain">
-
-        </div>
-    </div>
-
-    <div class="page" ng-class="page4">
-        <div class="contain">
-
-        </div>
-    </div>
-
-    <div class="page" ng-class="page5">
-        <div class="contain">
-
-        </div>
-    </div>
-
-    <div class="page" ng-class="page6">
-        <div class="contain">
-
-        </div>
-    </div>
 </div>
+

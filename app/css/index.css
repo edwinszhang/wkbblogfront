@@ -1,62 +1,14 @@
-#pageContain {
-    overflow: hidden;
-}
 .page {
-    display: none;
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
-}
-.contain {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: relative;
-    z-index: 0;
-}
-.current .contain,.slide .contain {
-    display: block;
-}
-.current {
-    display: block;
-    z-index: 1;
-}
-.slide {
-    display: block;
-    z-index: 2;
-}
-.swipe {
-    display: block;
-    z-index: 3;
-    transition-duration: 0ms !important;
-    -webkit-transition-duration: 0ms !important;
-}
-.page1 {
     background:url("../assets/img/backgroud/town.jpg") no-repeat;
     background-size:100% 100%;
-}
-.page2 {
-    background:url("../assets/img/backgroud/sky.jpg") no-repeat;
-    background-size:100% 100%;
-}
-.page3 {
-    background:url("../assets/img/backgroud/street.jpg") no-repeat;
-    background-size:100% 100%;
-}
-.page4 {
-    background:url("../assets/img/backgroud/sunset.jpg") no-repeat;
-    background-size:100% 100%;
-}
-.page5 {
-    background:url("../assets/img/backgroud/city.jpg") no-repeat;
-    background-size:100% 100%;
-}
-.page6 {
-    background:url("../assets/img/backgroud/river.jpg") no-repeat;
-    background-size:100% 100%;
+    display: block;
+    z-index: 1;
 }
 #navBar {
     width: 100%;
@@ -69,6 +21,7 @@
     margin: 0;
     display: table;
     height: 4em;
+    overflow: hidden;
 }
 #navBar .active,#navBar li:hover {
     font-size: 2em;
@@ -171,8 +124,9 @@
     /*border-bottom: 1px dashed #888888;*/
 }
 .centerPage .wrapbuttom .contents .long .content{
-    height: 9em;
+    height: 7.5em;
     margin-top: .5em;
+    margin-bottom: 1.5em;
     text-indent:2em;
     font-size: .9em;
     line-height: 1.5em;
@@ -183,8 +137,8 @@
 .centerPage .wrapbuttom .contents .long .action{
     font-size: .8em;
     color: black;
-    height: 4em;
-    line-height: 4em;
+    height: 3em;
+    line-height: 3em;
 }
 .centerPage .wrapbuttom .contents .long .action .read{
     float:right;
@@ -192,4 +146,35 @@
 
 .centerPage .wrapbuttom .contents .down{
     margin-top: 10%;
+}
+
+.view-animate.ng-leave {
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
+    display:block;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.view-animate.ng-leave.ng-leave-active {
+    top:-100%;
+    bottom: 100%;
+}
+
+.view-animate.ng-enter {
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s;
+    display:block;
+    width:100%;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    bottom:-100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+    top:0;
+    bottom: 0;
 }

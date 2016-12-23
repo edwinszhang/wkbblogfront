@@ -2,7 +2,7 @@
  * Created by Administrator on 2016/12/18.
  */
 var blog = angular.module('blog',
-    [ 'ngRoute','blog.indexControllers']);
+    [ 'ngRoute','ngAnimate','blog.indexControllers']);
 
 
 blog

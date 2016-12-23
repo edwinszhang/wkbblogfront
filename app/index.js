@@ -3,11 +3,10 @@
  */
 require('angular');
 require('angular-route');
+require('angular-animate');
 
 require('./js/app.js');
 require('./js/controllers/indexControllers');
-
-
 
 require('./css/reset.css');
 require('./css/index.css');

@@ -31,11 +31,7 @@ module.exports = {
                 loader: 'html'
             },
             {
-                test: /\.(png)$/,
-                loader: 'url?limit=40000'
-            },
-            {
-                test: /.*\.(gif|jpe?g)$/i,
+                test: /.*\.(gif|jpe?g|png)$/i,
                 loaders: [
                     'file?hash=sha512&digest=hex&name=[hash].[ext]',
                     'image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 85}}'
