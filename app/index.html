@@ -6,6 +6,14 @@
     <title>首页</title>
 </head>
 <body>
+<ul id="navBar">
+    <li ng-click="go('/')">首页</li>
+    <li ng-click="go('/article')">文章</li>
+    <li>问题</li>
+    <li>图片</li>
+    <li>转载</li>
+    <li>其他</li>
+</ul>
 <div ng-view class="view-animate">
 </div>
 </body>

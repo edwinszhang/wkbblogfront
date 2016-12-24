@@ -52,4 +52,10 @@ blog
         } ];
     }]);
 
+blog.run(["$location","$rootScope",function($location,$rootScope){
+
+    $rootScope.go = function ( path ) {
+        $location.path( path );
+    };
+}]);
 module.exports = blog;

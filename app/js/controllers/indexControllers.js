@@ -38,20 +38,11 @@ angular.module('blog.indexControllers', [])
             "background-size":"100% 100%"
         }
 
-        $scope.img4={
-            "background":"url("+require("../../assets/img/thumbnail/lu.png")+") no-repeat",
-            "background-size":"100% 100%"
-        }
-        $scope.go = function ( path ) {
-            $location.path( path );
-        };
+
 
     }]).controller('articleController',['$scope','$location',function($scope,$location) {
 
 
-        $scope.go = function ( path ) {
-            $location.path( path );
-        };
 
     }]);
 

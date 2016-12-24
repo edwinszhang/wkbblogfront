@@ -9,5 +9,7 @@ require('./js/app.js');
 require('./js/controllers/indexControllers');
 
 require('./css/reset.css');
+require('./css/common.css');
 require('./css/index.css');
+require('./css/article.css')
 require('./assets/font-awesome/css/font-awesome.min.css');
