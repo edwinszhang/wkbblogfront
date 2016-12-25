@@ -44,11 +44,11 @@
 }
 
 .centerPage{
+    position: relative;
     width: 70%;
     margin: 6em auto;
     height: 80%;
     background-color: #ededed;
-    overflow: hidden;
     min-width: 30em;
 }
 
@@ -59,14 +59,52 @@
     background-color:white;
     display: table;
 }
+.centerPage .page-button{
+    position: absolute;
+    height: 3em;
+    line-height: 3em;
+    font-size: 3em;
+    margin-top: -1.5em;
+    top:50%;
+    background-color: white;
+    color: #a1a1a1
+}
+.centerPage .enable{
+    transition: all 0.30s ease-in-out;
+    opacity: .8;
+}
+.centerPage .enable:hover{
+    opacity: 1;
+    color: #888888;
+    box-shadow: 0 0 10px white;
+    -webkit-box-shadow: 0 0 10px white;
+    -moz-box-shadow: 0 0 10px white;
+}
+.centerPage .disable{
+    opacity: .4;
+    color: #888888;
+}
+.centerPage .page-left{
+    left: -1em;
+}
+
+.centerPage .page-right{
+    right: -1em;
+}
+
+
 
 .centerPage .wraptop .pageTitle{
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     font-size: 1.5em;
-    padding-left: .5em;
+    padding: 0 .5em;
+}
 
+.centerPage .wraptop .pageTitle .more{
+    float:right;
+    color: #888888;
 }
 
 .centerPage .wrapbuttom{
@@ -84,49 +122,54 @@
     max-width:1px;
 }
 
-.centerPage .wrapbuttom .contents .short,.centerPage .wrapbuttom .contents .long{
+.centerPage .wrapbuttom .contents .short,.centerPage .wrapbuttom .contents .long,.centerPage .wrapbuttom .contents .medium{
     width: 100%;
     background-color: white;
     box-shadow: 2px 2px 2px #888888;
     position: relative;
     background-size:100% 100%;
 }
-
+.centerPage .wrapbuttom .contents  .medium .content{
+    height: 6em;
+}
 .centerPage .wrapbuttom .contents .short{
     height: 40%;
-    overflow:hidden;
 }
 
 .centerPage .wrapbuttom .contents .long{
     height: 54%;
-    padding: .5em;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
-.centerPage .wrapbuttom .contents .long .info{
+.centerPage .wrapbuttom .contents .medium{
+    height: 45%;
+}
+
+.centerPage .wrapbuttom .contents .info{
+    width: 90%;
+    margin: 0 auto;
     font-size: .8em;
     color: #888888;
-    height: 2em;
+    height: 3em;
+    line-height: 3em;
     overflow: hidden;
 }
-.centerPage .wrapbuttom .contents .long .info .time{
+.centerPage .wrapbuttom .contents  .info .time{
     float:right;
 }
 
-.centerPage .wrapbuttom .contents .long .title{
-    height: 3em;
-    font-size: .9em;
+.centerPage .wrapbuttom .contents  .title{
+    width: 90%;
+    height: 2em;
+    margin: 0 auto;
+    font-size: 1em;
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 2em;
     overflow: hidden;
     /*border-bottom: 1px dashed #888888;*/
 }
-.centerPage .wrapbuttom .contents .long .content{
-    height: 7.5em;
-    margin-top: .5em;
-    margin-bottom: 1.5em;
+.centerPage .wrapbuttom .contents  .content{
+    width: 90%;
+    margin: 5% auto;
     text-indent:2em;
     font-size: .9em;
     line-height: 1.5em;
@@ -134,13 +177,21 @@
     overflow: hidden;
     color: #888888;
 }
-.centerPage .wrapbuttom .contents .long .action{
+.centerPage .wrapbuttom .contents  .long .content{
+    height: 7.5em;
+}
+.centerPage .wrapbuttom .contents  .action{
+    width: 90%;
     font-size: .8em;
     color: black;
     height: 3em;
     line-height: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -45%;
 }
-.centerPage .wrapbuttom .contents .long .action .read{
+.centerPage .wrapbuttom .contents  .action .read{
     float:right;
 }
 

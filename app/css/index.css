@@ -1,3 +1,6 @@
 .page1{
     background:url("../assets/img/backgroud/town.jpg") no-repeat;
 }
+.centerPage .wrapbuttom .contents  .long .content{
+    height: 7.5em;
+}
