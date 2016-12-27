@@ -5,7 +5,7 @@
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --hot --inline",
     "build": "webpack --progress --profile  --config webpack.production.config.js"
   },
   "author": "WangKaibin",

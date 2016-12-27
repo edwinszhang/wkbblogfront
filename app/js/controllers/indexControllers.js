@@ -58,18 +58,18 @@ angular.module('blog.indexControllers', [])
 
         $scope.typeName="文章";
         $scope.typeIcon="fa-newspaper-o";
-        $scope.pageClass="page2";
+        $scope.pageClass="list-article-bak";
 
     }]).controller('problemController',['$scope',function($scope) {
 
         $scope.typeName="问题";
         $scope.typeIcon="fa-flask";
-        $scope.pageClass="page3";
+        $scope.pageClass="list-problem-bak";
     }]).controller('imgController',['$scope',function($scope) {
 
         $scope.typeName="图片";
         $scope.typeIcon="fa-picture-o";
-        $scope.pageClass="page4";
+        $scope.pageClass="image-bak";
         $scope.img1={
             "background":"url("+require("../../assets/img/thumbnail/mountain.png")+") no-repeat",
             "background-size":"100% 100%"
@@ -94,7 +94,7 @@ angular.module('blog.indexControllers', [])
 
         $scope.typeName="转载";
         $scope.typeIcon="fa-share-alt-square";
-        $scope.pageClass="page5";
+        $scope.pageClass="list-problem-bak";
     }]);
 
 

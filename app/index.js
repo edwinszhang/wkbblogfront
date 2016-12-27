@@ -7,12 +7,14 @@ require('angular-animate');
 
 require('./js/app.js');
 require('./js/controllers/indexControllers');
+require('./js/controllers/articleControllers');
 
 require('./css/reset.css');
 require('./css/common.css');
 require('./css/index.css');
-require('./css/article.css');
-require('./css/problem.css');
-require('./css/image.css');
-require('./css/share.css')
+require('./css/list_article.css');
+require('./css/list_problem.css');
+require('./css/list_image.css');
+require('./css/list_share.css');
+require('./css/detail_article.css')
 require('./assets/font-awesome/css/font-awesome.min.css');
