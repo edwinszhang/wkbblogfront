@@ -51,7 +51,6 @@ td {
 body {
     width: 100%;
     *cursor: default;
-    overflow: hidden;
     font: 20px/1.5 "Microsoft YaHei",Helvetica,STHeiti STXihei,Microsoft JhengHei,Arial;
 }
 table {
