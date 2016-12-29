@@ -7,7 +7,7 @@ require('angular-animate');
 
 require('./js/app.js');
 require('./js/controllers/indexControllers');
-require('./js/controllers/articleControllers');
+require('./js/controllers/detailControllers');
 
 require('./css/reset.css');
 require('./css/common.css');

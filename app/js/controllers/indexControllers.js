@@ -29,7 +29,7 @@ blog
 
 
 
-angular.module('blog.indexControllers', [])
+angular.module('indexControllers', [])
     .controller('indexController',['$scope',function($scope) {
 
         $scope.img1={
