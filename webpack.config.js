@@ -22,7 +22,10 @@ module.exports = {
 
 
     module: {
+        // 加载器配置, 
+        // ？？如何找到资源对应的loader
         loaders: [
+            //.css 文件使用 style-loader 和 css-loader 来处理
             {
                 test: /\.css$/,
                 loaders: ['style', 'css']
@@ -50,6 +53,7 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         }),
+        // 它用于提取多个入口文件的公共脚本部分，然后生成一个 common.js 来方便多页面之间进行复用
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
     ],
 
